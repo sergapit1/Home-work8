@@ -615,9 +615,17 @@ public class Main2 {
         Pattern pattern = Pattern.compile("(http|https|ftp)://.+?(ru|com|net|org)");
 
         Matcher matcher = pattern.matcher(urls);
+        String pattern1 = "http";
+        String pattern2 = "https";
+        String pattern3 = "ftp";
 
-        while (matcher.find()){
-            System.out.println("Адрес: " + matcher.group(0)); // тут надо вывести адрес
+        while (matcher.find()) {
+
+
+            System.out.println();
+            System.out.println("Адрес: " + matcher.group(1)); // тут надо вывести адрес
+
+
             //Добавить ТОП протоколов
             //Добавить ТОП доменов
             //Добавить ТОП национальных доменов
